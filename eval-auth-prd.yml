@@ -1,8 +1,15 @@
 env:
   sdfsdf
 spring:
-  application:
-    name: eval-auth
+  data:
+    elasticsearch:
+      cluster-name: eval
+      #配置es节点信息，逗号分隔，如果没有指定，则启动ClientNode
+      cluster-nodes: 127.0.0.1: 9300
+      properties:
+        path:
+          logs: F:\elk\elasticsearch-6.5.4-node2\logs #elasticsearch日志存储目录
+          data: F:\elk\elasticsearch-6.5.4-node2\data #elasticsearch数据存储目录
   rabbitmq:
       host: localhost
       port: 5672
