@@ -52,7 +52,7 @@ spring:
     base-url: http://127.0.0.1:7777/
 logging:
   level:
-     com.sjy.eval.auth.dao: debug
+     com.sjy.eval.auth.dao: info
 server:
   port: 9999
 feign:
