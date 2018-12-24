@@ -53,10 +53,6 @@ spring:
   sleuth:
     sampler:
       percentage: 1
-
-zipkin:
-  rabbitmq:
-    queue: zipkin
 logging:
   level:
      com.sjy.eval.auth.dao: debug
