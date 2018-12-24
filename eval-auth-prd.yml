@@ -3,6 +3,11 @@ env:
 spring:
   application:
     name: eval-auth
+  rabbitmq:
+      host: localhost
+      port: 5672
+      username: admin
+      password: admin
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     #username: root
@@ -48,6 +53,10 @@ spring:
   sleuth:
     sampler:
       percentage: 1
+
+zipkin:
+  rabbitmq:
+    queue: zipkin
 logging:
   level:
      com.sjy.eval.auth.dao: debug
