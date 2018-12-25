@@ -3,11 +3,11 @@ env:
 spring:
   application:
     name: eval-auth
-  data:
-    elasticsearch:
-      cluster-name: eval
+  #data:
+    #elasticsearch:
+      #cluster-name: eval
       #配置es节点信息，逗号分隔，如果没有指定，则启动ClientNode
-      cluster-nodes: 127.0.0.1: 9300
+      #cluster-nodes: 127.0.0.1: 9300
   rabbitmq:
       host: localhost
       port: 5672
@@ -57,7 +57,7 @@ spring:
     base-url: http://127.0.0.1:7777/
 logging:
   level:
-     com.sjy.eval.auth.dao: info
+     com.sjy.eval.auth.dao: debug
 server:
   port: 9999
 feign:
