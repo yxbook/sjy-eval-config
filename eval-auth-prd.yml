@@ -46,18 +46,11 @@ spring:
   jackson:
     time-zone: GMT+8
     date-format: yyyy-MM-dd HH:mm:ss
-  mail:
-    default-encoding: UTF-8
-    host: smtp.163.com
-    password: youxun123
-    port: 25
-    protocol: smtp
-    username: yooxuu@163.com
   zipkin:
     base-url: http://127.0.0.1:7777/
 logging:
   level:
-     com.sjy.eval.auth.dao: debug
+     com.sjy.eval.auth.mapper: debug
 server:
   port: 9999
 feign:
