@@ -15,13 +15,13 @@ spring:
       password: admin
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    #username: root
-    #password: root
-    #url: jdbc:mysql://127.0.0.1:3306/eval?useSSL=false&serverTimezone=UTC&allowMultiQueries=true
+    username: root
+    password: root
+    url: jdbc:mysql://127.0.0.1:3306/eval?useSSL=false&serverTimezone=UTC&allowMultiQueries=true
 
-    username: evalowner
-    password: c3U4xRaMM10rSQMmk
-    url: jdbc:mysql://rm-bp1lt3gi5m0570f24o.mysql.rds.aliyuncs.com:3306/eval?useSSL=false&serverTimezone=UTC&allowMultiQueries=true
+    #username: evalowner
+    #password: c3U4xRaMM10rSQMmk
+    #url: jdbc:mysql://rm-bp1lt3gi5m0570f24o.mysql.rds.aliyuncs.com:3306/eval?useSSL=false&serverTimezone=UTC&allowMultiQueries=true
     # 配置初始化大小、最小、最大
     maxActive: 20
     initialSize: 1
