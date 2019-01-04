@@ -52,7 +52,7 @@ logging:
   level:
      com.sjy.eval.auth.mapper: debug
 server:
-  port: 9999
+  port: 9966
 feign:
   hystrix:
       enabled: true
